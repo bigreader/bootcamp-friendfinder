@@ -8,7 +8,7 @@ router.use(express.urlencoded({extended: true}));
 router.use(express.json());
 
 router.get('/friends', (req, res) => {
-	res.json({});
+	res.json(friends);
 });
 
 router.post('/friends', (req, res) => {
