@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+	<title>Friend Finder</title>
+
+	<style type="text/css">
+		p.question {
+			margin-top: 3em;
+			border-top: 1px solid #dddddd;
+			padding-top: 1em;
+			font-size: 1.2em;
+		}
+		.radios {
+			width: 100%;
+			max-width: 20em;
+			display: flex;
+			justify-content: space-between;
+		}
+		.radios input {
+			margin-top: 4px;
+		}
+		.radios label {
+			color: #666666;
+			font-style: italic;
+		}
+	</style>
+</head>
+<body>
+	<div class="container my-3 my-lg-5">
+		<div class="row justify-content-center">
+			<div class="col-12 col-lg-8">
+
+				<h1>Friend Finder</h1>
+
+				<form id="survey">
+
+					<div class="form-group">
+						<label for="name">Name</label>
+						<input type="text" class="form-control" id="name" placeholder="" required>
+					</div>
+
+					<div class="form-group">
+						<label for="photo">Link to photo</label>
+						<input type="url" class="form-control" id="photo" placeholder="https://">
+					</div>
+
+					<div class="form-group">
+						<p class="question">I enjoy taking personality quizzes.</p>
+
+						<div class="radios">
+							<label for="q1">Disagree</label>
+							<input type="radio" name="q1" value="1">
+							<input type="radio" name="q1" value="2">
+							<input type="radio" name="q1" value="3">
+							<input type="radio" name="q1" value="4">
+							<input type="radio" name="q1" value="5">
+							<label for="q1">Agree</label>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<p class="question">I complete assignments ahead of schedule.</p>
+
+						<div class="radios">
+							<label for="q2">Disagree</label>
+							<input type="radio" name="q2" value="1">
+							<input type="radio" name="q2" value="2">
+							<input type="radio" name="q2" value="3">
+							<input type="radio" name="q2" value="4">
+							<input type="radio" name="q2" value="5">
+							<label for="q2">Agree</label>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<p class="question">I think of myself as an outdoorsy person.</p>
+
+						<div class="radios">
+							<label for="q3">Disagree</label>
+							<input type="radio" name="q3" value="1">
+							<input type="radio" name="q3" value="2">
+							<input type="radio" name="q3" value="3">
+							<input type="radio" name="q3" value="4">
+							<input type="radio" name="q3" value="5">
+							<label for="q3">Agree</label>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<p class="question">I'm happiest reading a book by myself in the dark while crying.</p>
+
+						<div class="radios">
+							<label for="q4">Disagree</label>
+							<input type="radio" name="q4" value="1">
+							<input type="radio" name="q4" value="2">
+							<input type="radio" name="q4" value="3">
+							<input type="radio" name="q4" value="4">
+							<input type="radio" name="q4" value="5">
+							<label for="q4">Agree</label>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<p class="question">I'm happiest snorting cocaine off a park bench with 80 of my closest friends.</p>
+
+						<div class="radios">
+							<label for="q5">Disagree</label>
+							<input type="radio" name="q5" value="1">
+							<input type="radio" name="q5" value="2">
+							<input type="radio" name="q5" value="3">
+							<input type="radio" name="q5" value="4">
+							<input type="radio" name="q5" value="5">
+							<label for="q5">Agree</label>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<p class="question">I would marry Danny DeVito if he proposed.</p>
+
+						<div class="radios">
+							<label for="q6">Disagree</label>
+							<input type="radio" name="q6" value="1">
+							<input type="radio" name="q6" value="2">
+							<input type="radio" name="q6" value="3">
+							<input type="radio" name="q6" value="4">
+							<input type="radio" name="q6" value="5">
+							<label for="q6">Agree</label>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<p class="question">I want to learn another language.</p>
+
+						<div class="radios">
+							<label for="q7">Disagree</label>
+							<input type="radio" name="q7" value="1">
+							<input type="radio" name="q7" value="2">
+							<input type="radio" name="q7" value="3">
+							<input type="radio" name="q7" value="4">
+							<input type="radio" name="q7" value="5">
+							<label for="q7">Agree</label>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<p class="question">I have an unshakeable dread that I will never be truly happy in life.</p>
+
+						<div class="radios">
+							<label for="q8">Disagree</label>
+							<input type="radio" name="q8" value="1">
+							<input type="radio" name="q8" value="2">
+							<input type="radio" name="q8" value="3">
+							<input type="radio" name="q8" value="4">
+							<input type="radio" name="q8" value="5">
+							<label for="q8">Agree</label>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<p class="question">I like dogs.</p>
+
+						<div class="radios">
+							<label for="q9">Disagree</label>
+							<input type="radio" name="q9" value="1">
+							<input type="radio" name="q9" value="2">
+							<input type="radio" name="q9" value="3">
+							<input type="radio" name="q9" value="4">
+							<input type="radio" name="q9" value="5">
+							<label for="q9">Agree</label>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<p class="question">I tend to dramatically overthink inconsequential aspects of otherwise simple tasks.</p>
+
+						<div class="radios">
+							<label for="q10">Disagree</label>
+							<input type="radio" name="q10" value="1">
+							<input type="radio" name="q10" value="2">
+							<input type="radio" name="q10" value="3">
+							<input type="radio" name="q10" value="4">
+							<input type="radio" name="q10" value="5">
+							<label for="q10">Agree</label>
+						</div>
+					</div>
+
+					<button type="submit" class="btn btn-lg btn-primary my-5">Submit</button>
+
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- MODALS -->
+	<div id="errorModal" class="modal" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Whoops!</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="friendModal" class="modal" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Friend found!</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<img src="" alt="friend photo" class="w-50 float-right">
+					<h3></h3>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<script type="text/javascript">
+		
+		$('#survey').on('submit', event => {
+			event.preventDefault();
+
+			var answers = [];
+			for (var i=1; i<=10; i++) {
+				var checked = $('#survey input[name=q'+i+']:checked');
+				if (checked.length === 0) { // no answer selected
+					$('#errorModal .modal-body p').text('Question ' + i + ' is still unanswered! Fill out the whole survey and try again.');
+					$('#errorModal').modal('show');
+					break;
+				}
+				answers.push(parseInt(checked.val()));
+			}
+			if (answers.length < 10) return; // didn't answer all the questions
+
+			var profile = {
+				name: $('#survey #name').val(),
+				photo: $('#survey #photo').val(),
+				answers: answers
+			}
+
+			console.log(profile);
+
+			$.post('/api/friends', profile, data => {
+				console.log(data);
+
+				if (!data.success) {
+					$('#errorModal .modal-body p').text("We couldn't find a friend to match you with - sorry!");
+					$('#errorModal').modal('show');
+				}
+
+				var modal = $('#friendModal');
+				modal.find('h3').text(data.friend.name);
+				modal.find('img').attr('src', data.friend.photo);
+				modal.modal('show');
+			});
+		})
+
+	</script>
+</body>
+</html>
